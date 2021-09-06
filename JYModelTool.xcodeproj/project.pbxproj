@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		C16503F426E6060400194101 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16503F226E6060400194101 /* TextView.swift */; };
 		C16503F926E6157300194101 /* JYJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16503F826E6157300194101 /* JYJsonParser.swift */; };
 		C16503FA26E6157300194101 /* JYJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16503F826E6157300194101 /* JYJsonParser.swift */; };
+		C16503FC26E6289800194101 /* NLTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16503FB26E6289800194101 /* NLTestModel.swift */; };
+		C16503FD26E6289800194101 /* NLTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16503FB26E6289800194101 /* NLTestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,7 @@
 		C16503E326E605BE00194101 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		C16503F226E6060400194101 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		C16503F826E6157300194101 /* JYJsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYJsonParser.swift; sourceTree = "<group>"; };
+		C16503FB26E6289800194101 /* NLTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLTestModel.swift; sourceTree = "<group>"; };
 		CCAEA8A2AD820259F88F89F5 /* Pods-JYModelTool (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYModelTool (macOS).release.xcconfig"; path = "Target Support Files/Pods-JYModelTool (macOS)/Pods-JYModelTool (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		DF63B7B3AD6ACB886DDBC4B7 /* Pods-JYModelTool (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYModelTool (iOS).release.xcconfig"; path = "Target Support Files/Pods-JYModelTool (iOS)/Pods-JYModelTool (iOS).release.xcconfig"; sourceTree = "<group>"; };
 		ED01F3DD52D594283ED421F6 /* Pods-JYModelTool (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYModelTool (macOS).debug.xcconfig"; path = "Target Support Files/Pods-JYModelTool (macOS)/Pods-JYModelTool (macOS).debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +71,6 @@
 				ED01F3DD52D594283ED421F6 /* Pods-JYModelTool (macOS).debug.xcconfig */,
 				CCAEA8A2AD820259F88F89F5 /* Pods-JYModelTool (macOS).release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,6 +102,7 @@
 				C16503D226E605BA00194101 /* ContentView.swift */,
 				C16503F226E6060400194101 /* TextView.swift */,
 				C16503F826E6157300194101 /* JYJsonParser.swift */,
+				C16503FB26E6289800194101 /* NLTestModel.swift */,
 				C16503D326E605BE00194101 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C16503F326E6060400194101 /* TextView.swift in Sources */,
+				C16503FC26E6289800194101 /* NLTestModel.swift in Sources */,
 				C16503E626E605BE00194101 /* ContentView.swift in Sources */,
 				C16503E426E605BE00194101 /* JYModelToolApp.swift in Sources */,
 				C16503F926E6157300194101 /* JYJsonParser.swift in Sources */,
@@ -307,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C16503F426E6060400194101 /* TextView.swift in Sources */,
+				C16503FD26E6289800194101 /* NLTestModel.swift in Sources */,
 				C16503E726E605BE00194101 /* ContentView.swift in Sources */,
 				C16503E526E605BE00194101 /* JYModelToolApp.swift in Sources */,
 				C16503FA26E6157300194101 /* JYJsonParser.swift in Sources */,

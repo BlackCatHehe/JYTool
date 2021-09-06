@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var inputString = "Hello world"
+    @ObservedObject var parser = JYJsonParser()
 
     var body: some View {
         HStack(spacing: 10) {
             
             Group {
                 ZStack {
-                    TextView(input: $inputString)
+                    TextView(input: $parser.input)
                         .padding(10)
                 }
                 ZStack {
-                    TextView(input: $inputString, isEditable: .constant(false))
+                    TextView(input: $parser.output, isEditable: .constant(false))
                         .padding(10)
                 }
             }

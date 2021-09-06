@@ -49,7 +49,6 @@ struct TextView: NSViewRepresentable {
             guard let textView = notification.object as? NSTextView else {
                 return
             }
-            print(textView.string)
             parent.input = textView.string
         }
     }
