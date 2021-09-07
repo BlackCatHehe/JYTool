@@ -10,8 +10,14 @@ import Combine
 import SwiftyJSON
 class JYJsonParser: NSObject, ObservableObject {
     @Published var input: String = ""
-    @Published var output: String = ""
+    @Published var output: [String] = []
+    @Published var result: ParseResult?
 
+    struct ParseResult {
+        let isSuccess: Bool
+        let message: String?
+    }
+    
     var cancellable: [AnyCancellable] = []
     
     
@@ -40,11 +46,24 @@ extension JYJsonParser {
             print("parse failed: json格式错误")
             return
         }
-        generateVariables(name: "NLTestModel", json: json)
+        output = generateVariables(name: "NLTestModel", json: json)
+    }
+    
+    func format() {
+        guard let data = input.data(using: .utf8), let json = JSON(rawValue: data) else {
+            print("parse failed: json格式错误")
+            
+            return
+        }
+        if let result = json.rawString(.utf8, options: .prettyPrinted) {
+            print(result)
+            input = result
+        }
     }
     
     @discardableResult
-    private func generateVariables(name: String, json: JSON) -> String {
+    private func generateVariables(name: String, json: JSON) -> [String] {
+        var results: [String] = []
         let resultTop = "struct \(name) {\n "
         let content = json.reduce("") { result, next in
             var type = ""
@@ -65,11 +84,13 @@ extension JYJsonParser {
                 if let _ = next.1.array {
                     type = "[\(modelName)] = []"
                     if let first = next.1.array?.first {
-                        generateVariables(name: modelName, json: first)
+                        let subResults = generateVariables(name: modelName, json: first)
+                        results.append(contentsOf: subResults)
                     }
                 } else {
                     type = "\(modelName) = .init()"
-                    generateVariables(name: modelName, json: next.1)
+                    let subResults = generateVariables(name: modelName, json: next.1)
+                    results.append(contentsOf: subResults)
                 }
                 
             }
@@ -110,8 +131,8 @@ extension JYJsonParser {
         }
         
         let result = resultTop + content + initStr + mapInitStrTop + mapContent + "}\n}\n\n"
-        print(result)
-        return result
+        results.append(result)
+        return results
     }
 }
 

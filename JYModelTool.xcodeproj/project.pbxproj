@@ -19,8 +19,14 @@
 		C16503F426E6060400194101 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16503F226E6060400194101 /* TextView.swift */; };
 		C16503F926E6157300194101 /* JYJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16503F826E6157300194101 /* JYJsonParser.swift */; };
 		C16503FA26E6157300194101 /* JYJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16503F826E6157300194101 /* JYJsonParser.swift */; };
-		C16503FC26E6289800194101 /* NLTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16503FB26E6289800194101 /* NLTestModel.swift */; };
-		C16503FD26E6289800194101 /* NLTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16503FB26E6289800194101 /* NLTestModel.swift */; };
+		C16BBE5626E73D480051669D /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16BBE5526E73D480051669D /* RenderView.swift */; };
+		C16BBE5726E73D480051669D /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16BBE5526E73D480051669D /* RenderView.swift */; };
+		C16BBE5926E73FE50051669D /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16BBE5826E73FE50051669D /* SimpleView.swift */; };
+		C16BBE5A26E73FE50051669D /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16BBE5826E73FE50051669D /* SimpleView.swift */; };
+		C16BBE5C26E7402C0051669D /* Simples.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16BBE5B26E7402C0051669D /* Simples.swift */; };
+		C16BBE5D26E7402C0051669D /* Simples.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16BBE5B26E7402C0051669D /* Simples.swift */; };
+		C16BBE5F26E751200051669D /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16BBE5E26E751200051669D /* TempView.swift */; };
+		C16BBE6026E751200051669D /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16BBE5E26E751200051669D /* TempView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +43,10 @@
 		C16503E326E605BE00194101 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		C16503F226E6060400194101 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		C16503F826E6157300194101 /* JYJsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYJsonParser.swift; sourceTree = "<group>"; };
-		C16503FB26E6289800194101 /* NLTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLTestModel.swift; sourceTree = "<group>"; };
+		C16BBE5526E73D480051669D /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
+		C16BBE5826E73FE50051669D /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
+		C16BBE5B26E7402C0051669D /* Simples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simples.swift; sourceTree = "<group>"; };
+		C16BBE5E26E751200051669D /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
 		CCAEA8A2AD820259F88F89F5 /* Pods-JYModelTool (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYModelTool (macOS).release.xcconfig"; path = "Target Support Files/Pods-JYModelTool (macOS)/Pods-JYModelTool (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		DF63B7B3AD6ACB886DDBC4B7 /* Pods-JYModelTool (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYModelTool (iOS).release.xcconfig"; path = "Target Support Files/Pods-JYModelTool (iOS)/Pods-JYModelTool (iOS).release.xcconfig"; sourceTree = "<group>"; };
 		ED01F3DD52D594283ED421F6 /* Pods-JYModelTool (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYModelTool (macOS).debug.xcconfig"; path = "Target Support Files/Pods-JYModelTool (macOS)/Pods-JYModelTool (macOS).debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,9 +109,11 @@
 			children = (
 				C16503D126E605BA00194101 /* JYModelToolApp.swift */,
 				C16503D226E605BA00194101 /* ContentView.swift */,
+				C16BBE5526E73D480051669D /* RenderView.swift */,
+				C16BBE5826E73FE50051669D /* SimpleView.swift */,
+				C16BBE5B26E7402C0051669D /* Simples.swift */,
 				C16503F226E6060400194101 /* TextView.swift */,
 				C16503F826E6157300194101 /* JYJsonParser.swift */,
-				C16503FB26E6289800194101 /* NLTestModel.swift */,
 				C16503D326E605BE00194101 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -120,6 +131,7 @@
 		C16503DA26E605BE00194101 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C16BBE5E26E751200051669D /* TempView.swift */,
 				C16503DB26E605BE00194101 /* Info.plist */,
 			);
 			path = iOS;
@@ -299,9 +311,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C16503F326E6060400194101 /* TextView.swift in Sources */,
-				C16503FC26E6289800194101 /* NLTestModel.swift in Sources */,
 				C16503E626E605BE00194101 /* ContentView.swift in Sources */,
+				C16BBE5F26E751200051669D /* TempView.swift in Sources */,
+				C16BBE5C26E7402C0051669D /* Simples.swift in Sources */,
+				C16BBE5626E73D480051669D /* RenderView.swift in Sources */,
 				C16503E426E605BE00194101 /* JYModelToolApp.swift in Sources */,
+				C16BBE5926E73FE50051669D /* SimpleView.swift in Sources */,
 				C16503F926E6157300194101 /* JYJsonParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,9 +326,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C16503F426E6060400194101 /* TextView.swift in Sources */,
-				C16503FD26E6289800194101 /* NLTestModel.swift in Sources */,
 				C16503E726E605BE00194101 /* ContentView.swift in Sources */,
+				C16BBE6026E751200051669D /* TempView.swift in Sources */,
+				C16BBE5D26E7402C0051669D /* Simples.swift in Sources */,
+				C16BBE5726E73D480051669D /* RenderView.swift in Sources */,
 				C16503E526E605BE00194101 /* JYModelToolApp.swift in Sources */,
+				C16BBE5A26E73FE50051669D /* SimpleView.swift in Sources */,
 				C16503FA26E6157300194101 /* JYJsonParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

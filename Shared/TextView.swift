@@ -12,9 +12,11 @@ struct TextView: NSViewRepresentable {
     
     @Binding var input: String
     @Binding var isEditable: Bool
-    init(input: Binding<String>, isEditable: Binding<Bool> = .constant(true)) {
+    @Binding var isFirstResponser: Bool
+    init(input: Binding<String>, isEditable: Binding<Bool> = .constant(true), isFirstResponser: Binding<Bool>) {
         _input = input
         _isEditable = isEditable
+        _isFirstResponser = isFirstResponser
     }
 
     
